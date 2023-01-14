@@ -1,6 +1,8 @@
 .primary-header {
   position: relative;
   z-index: 2;
+  animation: slide-in-top var(--slide-in-speed) cubic-bezier(.79, .14, .15, .86) forwards,
+    fade-in-content var(--slide-in-speed) cubic-bezier(.79, .14, .15, .86) forwards;
 }
 
 .header-inner {
@@ -11,6 +13,16 @@
   align-items: center;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .toggle {
@@ -36,8 +48,6 @@
 .search-wrapper>* {
   transition: all .35s ease;
 }
-
-
 
 .search-toggle {
   position: absolute;
