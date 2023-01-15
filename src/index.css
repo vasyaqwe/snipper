@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration-skip-ink: auto;
   text-decoration: none;
